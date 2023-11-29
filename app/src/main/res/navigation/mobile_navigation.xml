@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_main">
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="com.example.worldcinematest.MainFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="com.example.worldcinematest.SelectionFragment"
+        android:label="@string/title_selection"
+        tools:layout="@layout/fragment_selection" />
+    <fragment
+        android:id="@+id/navigation_collections"
+        android:name="com.example.worldcinematest.CollectionsFragment"
+        android:label="@string/title_collections"
+        tools:layout="@layout/fragment_collections" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.worldcinematest.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
